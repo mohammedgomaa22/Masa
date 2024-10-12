@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        MASA - وسيطة عقارية
+    </title>
+    <meta name="description" content="قطع أراضي مختلفه المساحات في انحاء المملكه العربية السعودية للبيع">
+    <meta name="keywords" content="حلقه ,حلقات ,روتانا ,خليجيه ,يوتيوب ,فيديو ,طارق ,شو ,الحربي ,برنامج ,وينك ,محمد ,الخميسي ,شارك ,تانك ,مها ,طيبة ,نايف ,القحطاني ,سامر ,كردي ,بترجي ,اتجاهات ,نادين ,البدير ,بدير ,عبدالله ,المديفر ,في ,الصورة ,الصوره ,لقاء ,الجمعة ,الصميم ,الشبانه ,فيصل ,الحنايا ,سعود ,بن ,سلمان ,تركي ,آل ,الشيخ ,السعودية ,الامير ,الراحل ,سفرة وسفرة ,الليوان ,رادار ,ركشنة ,دريعان الدريعان ,راكان العريفي ,ما قل ودل ,فيصل الكاف ,Shark Tank ,تحدي الهوامير ,">
+    <link rel="shortcut icon" href="./assets/images/logo.jpeg" type="image/x-icon">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Mulish:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Typedjs cdn -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+            extend: {
+                colors: {
+                    primary: '#b3a781',
+                    dark: '#302f2d',
+                    light: '#d2c6b0',
+                    light_pro: '#fffae7',
+                    main_bg: '#1c1c5650',
+                }
+            }
+            }
+        }
+    </script>
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <!-- ********** Preloader ********** -->
+    <div id="preloader" class="h-screen w-screen flex items-center justify-center z-50 fixed top-0 right-0 bg-gradient-to-l from-primary to-light duration-1000">
+        <div class="loader">
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+        </div>
+    </div>
+    
+    <!-- ********** Navbar ********** -->
+    <nav class="h-[100px] fixed top-0 w-full z-20 shadow-md flex items-center bg-gradient-to-l from-primary to-light">
+        <div class="container flex justify-between items-center">
+            <div class="flex gap-8 justify-between items-center flex-1">
+                <!-- Logo -->
+                <div class="logo flex gap-2 relative h-[60px] w-[110px] rounded-md">
+                    <a href="#" class="overflow-hidden" style="border-radius: 39% 61% 67% 33% / 30% 36% 64% 70% ;">
+                        <img src="./assets/images/logo.jpeg " alt="logo" class="w-full h-full object-contain" loading="lazy">
+                    </a>
+                </div>
+                <div class="row flex justify-between items-center">
+                    <!-- UL Navbar -->
+                    <div class="ul flex gap-8 items-center py-4">
+                        <!-- Nav in full screen -->
+                        <div class="flex gap-16">
+                            <ul class="hidden 2xl:flex gap-8 font-medium text-white items-center">
+                                <li>
+                                    <a href="#" class="relative font-semibold text-[17px] duration-300 p-2 rounded-md hover:text-dark hover:bg-[#fffae7] nav-active"
+                                        aria-label="Read more about Seminole tax hike" nav-active>
+                                        <i class="fa-solid fa-house"></i>
+                                        الرئيسية
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#agricultural-lands" class="font-semibold text-[17px] duration-300 p-2 rounded-md hover:text-dark hover:bg-[#fffae7]"
+                                    aria-label="Read more about Seminole tax hike" nav-active>
+                                        <i class="fa-solid fa-wheat-awn"></i>
+                                        أراضي زراعية
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#residential-lands" class="font-semibold text-[17px] duration-300 p-2 rounded-md hover:text-dark hover:bg-[#fffae7]"
+                                        aria-label="Read more about Seminole tax hike" nav-active>
+                                        <i class="fa-solid fa-landmark"></i>
+                                        أراضي سكنية
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Nav in Mobile -->
+                        <ul class="sidebar fixed h-full w-[280px] left-0 top-[100px] -translate-x-[100%] flex flex-col items-center py-5 px-5 bg-gradient-to-l from-primary to-light text-white duration-500 shadow-md">
+    
+                            <button class="close-sidebar bg-gray-100 text-primary h-7 w-7 rounded-full ml-auto">X</button>
+    
+                            <!-- Logo -->
+                            <div class="logo flex items-center gap-2 relative h-32 w-32 mb-7">
+                                <a href="#" class="overflow-hidden" style="border-radius: 39% 61% 67% 33% / 30% 36% 64% 70% ;">
+                                    <img src="./assets/images/logo.jpeg" alt="logo" class="w-full h-full object-contain"
+                                        loading="lazy">
+                                </a>
+                            </div>
+    
+    
+                            <li>
+                                <a href="#" class="px-4 py-3 hover:pr-6 duration-300 block font-bold text-[20px]"
+                                    aria-label="Read more about Seminole tax hike">
+                                    الرئيسية
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#agricultural-lands"
+                                class="px-4 py-3 hover:pr-6 duration-300 block font-bold text-[20px]"
+                                aria-label="Read more about Seminole tax hike">
+                                    أراضي زراعية
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#residential-lands" class="px-4 py-3 hover:pr-6 duration-300 block font-bold text-[20px]"
+                                    aria-label="Read more about Seminole tax hike">
+                                    أراضي سكنية
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Toggler -->
+            <div class="cursor-pointer 2xl:hidden w-[30px] text-gray-50 text-2xl">
+                <span class="toggler fas fa-bars block h-full w-full"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mt-[100px]">
+
+        <!-- ********** Header ********** -->
+        <header class="home flex items-center relative bg-gradient-to-l from-primary to-light">
+            <div class="container relative">
+                <div>
+                    <!-- Info -->
+                    <div class="info flex-1 text-center lg:text-right">
+                        <h2 class="text-3xl md:text-[46px] font-extrabold  mb-5">
+                            <span class="text-white" id="typed1" style="line-height: 1.4;"></span>
+                        </h2>
+                        <p class="text-base md:text-lg font-medium text-white max-w-lg leading-[1.8]" id="typed2" style="line-height: 2;">
+                            
+                        </p>
+                        <a href="#residential-lands" rel="noopener noreferrer" class="block mx-auto lg:mx-0 w-fit">
+                            <button class="w-44 mt-5 py-2 rounded-lg font-semibold text-white bg-gradient-to-l from-primary to-light hover:bg-transparent transition-all border border-light" name="">
+                                تسوق الآن
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-shape-divider-bottom-1728248260">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </header>
+
+        <!-- agricultural-lands -->
+
+        <section id="agricultural-lands" class="py-16">
+            <div class="container">
+
+                <!-- Main title -->
+                <h2 class="flex flex-row flex-nowrap items-center mb-16">
+                    <span class="flex-grow block border-t border-dark"></span>
+                    <span class="flex-none block mx-4 px-4 py-2.5 text-xl rounded leading-none font-medium bg-primary text-white">
+                        أراضي زراعية
+                    </span>
+                    <span class="flex-grow block border-t border-dark"></span>
+                </h2>
+
+
+                <!-- Cards -->
+                <div class="grid gap-y-10 gap-x-5 grid-cols-1 lg:grid-cols-3">
+
+                    <!-- Card-1 -->
+                    <div class="card relative">
+                        <span class="card-number h-16 w-16 flex items-center justify-center text-3xl font-extrabold bg-gradient-to-l from-primary to-light text-gray-50 absolute -top-8 right-1/2 translate-x-1/2 z-10"
+                            style="border-radius: 39% 61% 72% 28% / 30% 39% 61% 70% ;">
+                            1
+                        </span>
+                        <div class="c-card block bg-gradient-to-l from-light to-light_pro shadow-md hover:shadow-lg rounded-lg overflow-hidden duration-500">
+                            <div class="relative h-56 overflow-hidden">
+                                <img class="absolute inset-0 h-full w-full object-cover" src="./assets/images/m-1.jpeg" alt="">
+                            </div>
+                            <div class="p-4">
+                                <span class="inline-block px-2 py-1 mb-2 leading-none bg-dark text-light_pro rounded-full font-semibold uppercase tracking-wide text-xs">منطقة القصيم</span>
+                                <h2 class="mt-2 mb-2  font-bold">
+                                    قطعة أرض بالنبهانية
+                                    <!-- <br> -->
+                                    بمساحة 151350 متر مربع
+                                </h2>
+                                <ul class="text-sm">
+                                    <h3 class="font-bold mb-3 relative ps-2 | before:content[''] before:absolute before:-right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        حدود وأطوال ومساحة الأرض
+                                    </h3>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الشمال يحدة مزرعة بطول بيدأ من الشرق للجنوب بطول 118م الشمال يحدة مزرعة بطول بيدأ من الشرق للجنوب بطول 118م
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الشمال يحدة مزرعة بطول بيدأ من الشرق للجنوب بطول 118م الشمال يحدة مزرعة بطول بيدأ من الشرق للجنوب بطول 118م
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الشمال يحدة مزرعة بطول بيدأ من الشرق للجنوب بطول 118م
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-3 flex items-center p-4 border-t">
+                                <span class="font-bold text-xl">1.5</span>&nbsp;<span class="text-sm font-semibold">ريال للمتر</span>
+                            </div>
+                            <!-- <div class="mt-3 flex items-center justify-between p-4 border-t">
+                                <div class="area flex flex-col items-center gap-1">
+                                    <span class="font-semibold">المساحة</span>
+                                    <span class="text-sm font-semibold">
+                                        151,350 متر مربع
+                                    </span>
+                                </div>
+                                <div class="price flex flex-col items-center gap-0">
+                                    <p class="font-semibold">السعر</p>
+                                    <div>
+                                        <span class="font-bold text-lg">
+                                            1.5
+                                        </span>&nbsp;<span class="text-sm font-semibold">ريال للمتر</span>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <div class="p-4 border-t flex items-center justify-between text-sm text-dark">
+                                <a href="https://www.youtube.com/watch?si=DKqd-YqLjFhSlcap&v=My9vsUeXK30&feature=youtu.be" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-0 h-fit">
+                                    التصوير الجوي
+                                    <img src="./assets/images/youtube (1).png" alt="video" height="10" width="70">
+                                </a>
+                                <a href="https://www.google.com/maps?q=25.745250,42.776944&entry=gps&g_ep=CAESCjExLjE0OC4xMDUYACDXggMqfiw5NDI0MTEzOSw5NDI0MjU2Miw5NDIyMzI5OSw5NDIxNjQxMyw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw5NDIyOTgzOSw0NzA4NzExOCw0NzA4NDM5Myw5NDIxMzIwMEICU0E%3D&shorturl=1" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-0 h-fit">
+                                    الموقع
+                                    <img src="./assets/images/map.png" alt="video" height="10" width="60">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card-2 -->
+                    <div class="card relative">
+                        <span class="card-number h-16 w-16 flex items-center justify-center text-3xl font-extrabold bg-gradient-to-l from-primary to-light text-gray-50 absolute -top-8 right-1/2 translate-x-1/2 z-10"
+                            style="border-radius: 39% 61% 72% 28% / 30% 39% 61% 70% ;">
+                            2
+                        </span>
+                        <div class="c-card block bg-gradient-to-l from-light to-light_pro shadow-md hover:shadow-lg rounded-lg overflow-hidden duration-500">
+                            <div class="relative h-56 overflow-hidden">
+                                <img class="absolute inset-0 h-full w-full object-cover" src="./assets/images/m-2.jpeg" alt="">
+                            </div>
+                            <div class="p-4">
+                                <span class="inline-block px-2 py-1 mb-2 leading-none bg-dark text-light_pro rounded-full font-semibold uppercase tracking-wide text-xs">منطقة القصيم</span>
+                                <h2 class="mt-2 mb-2  font-bold">
+                                    قطعة أرض رقم 29 من المخطط الزراعي بالعقيلة محافظة الرس بمساحة ١٩٦٤٨,٥ متر مربع
+                                </h2>
+                                <ul class="text-sm">
+                                    <h3 class="font-bold mb-3 relative ps-2 | before:content[''] before:absolute before:-right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        حدود وأطوال ومساحة الأرض
+                                    </h3>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الشمال: يحده شارع عرض ٢٠ متر بطول ١١١٦ متر.
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الجنوب: يحده قطعة رقم ١٠ بطول ١٨١٤ متر.
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الشرق: يحده مزرعة بطول ١٠٩١ متر.
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الغرب: يحده شارع عرض ٢٠ متر بطول ١٠٠ متر.
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        بئر مياه - عداد الكهرباء - نخل - اسفلت - استراحة
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-3 flex items-center p-4 border-t">
+                                <span class="font-bold text-xl">1,000,000</span>&nbsp;<span class="text-sm font-semibold">ريال</span>
+                            </div>
+                            <div class="p-4 border-t flex items-center justify-between text-sm text-dark">
+                                <a href="https://youtu.be/gneCtknveOs?si=6a04O-iPqqIoF_PX" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-0 h-fit">
+                                    التصوير الجوي
+                                    <img src="./assets/images/youtube (1).png" alt="video" height="10" width="70">
+                                </a>
+                                <a href="https://maps.app.goo.gl/V4FnNtLDS1e24Y2q9" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-0 h-fit">
+                                    الموقع
+                                    <img src="./assets/images/map.png" alt="video" height="10" width="60">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card-3 -->
+                    <div class="card relative">
+                        <span class="card-number h-16 w-16 flex items-center justify-center text-3xl font-extrabold bg-gradient-to-l from-primary to-light text-gray-50 absolute -top-8 right-1/2 translate-x-1/2 z-10"
+                            style="border-radius: 39% 61% 72% 28% / 30% 39% 61% 70% ;">
+                            3
+                        </span>
+                        <div class="c-card block bg-gradient-to-l from-light to-light_pro shadow-md hover:shadow-lg rounded-lg overflow-hidden duration-500">
+                            <div class="relative h-56 overflow-hidden">
+                                <img class="absolute inset-0 h-full w-full object-cover" src="./assets/images/m-3.jpeg" alt="">
+                            </div>
+                            <div class="p-4">
+                                <span class="inline-block px-2 py-1 mb-2 leading-none bg-dark text-light_pro rounded-full font-semibold uppercase tracking-wide text-xs">منطقة القصيم</span>
+                                <h2 class="mt-2 mb-2  font-bold">
+                                    مزرعة البدائع مساحة ٥٨٤٧٦٧ متر
+                                </h2>
+                                <ul class="text-sm">
+                                    <h3 class="font-bold mb-3 relative ps-2 | before:content[''] before:absolute before:-right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        حدود وأطوال ومساحة الأرض
+                                    </h3>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الشمال يحده شارع عرض ٢٠ م بطول ٣٢٠ م.
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الجنوب يحده شارع عرض ٢٠ م يبدأ من الشرق بطول ٢١٩.٥م ثم ينكسر إلى اليمين ٨٣.٤٥ م ثم ينكسر يسار ٩٦٥٤م ثم ينكسر يسار ١٩٢ م
+                                        مجموع ٢٢٤٧م.
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الشرق يحده مزرعة يبدأ من الشمال بطول ٧٠٠١٥م ثم ينكسر يسار ٨٥٤,٥٥ م.
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الغرب يحده شارع عرض ٢٠م بطول ١١٦,٩٤م.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-3 flex items-center p-4 border-t">
+                                <span class="font-bold text-xl">1.5</span>&nbsp;<span class="text-sm font-semibold">ريال للمتر</span>
+                            </div>
+                            <div class="p-4 border-t flex items-center justify-between text-sm text-dark">
+                                <a href="https://youtu.be/ZhL5gmktldY?si=Uf67rgccol8qg6Nb" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-0 h-fit">
+                                    التصوير الجوي
+                                    <img src="./assets/images/youtube (1).png" alt="video" height="10" width="70">
+                                </a>
+                                <a href="https://goo.gl/maps/JjRFBhznoDHwR5BA8" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-0 h-fit">
+                                    الموقع
+                                    <img src="./assets/images/map.png" alt="video" height="10" width="60">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card-4 -->
+                    <div class="card relative">
+                        <span class="card-number h-16 w-16 flex items-center justify-center text-3xl font-extrabold bg-gradient-to-l from-primary to-light text-gray-50 absolute -top-8 right-1/2 translate-x-1/2 z-10"
+                            style="border-radius: 39% 61% 72% 28% / 30% 39% 61% 70% ;">
+                            4
+                        </span>
+                        <div class="c-card block bg-gradient-to-l from-light to-light_pro shadow-md hover:shadow-lg rounded-lg overflow-hidden duration-500">
+                            <div class="relative h-56 overflow-hidden">
+                                <img class="absolute inset-0 h-full w-full object-cover" src="./assets/images/m-4.jpeg" alt="">
+                            </div>
+                            <div class="p-4">
+                                <span class="inline-block px-2 py-1 mb-2 leading-none bg-dark text-light_pro rounded-full font-semibold uppercase tracking-wide text-xs">منطقة القصيم</span>
+                                <h2 class="mt-2 mb-2  font-bold">
+                                    أرض زراعية في القوارة شمال القصيم
+                                </h2>
+                                <ul class="text-sm">
+                                    <h3 class="font-bold mb-3 relative ps-2 | before:content[''] before:absolute before:-right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        حدود وأطوال ومساحة الأرض
+                                    </h3>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الشمال يحده شارع عرض 30 م بطول 165 م.
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الجنوب يحده شارع عرض 30 م بطول 165م.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-3 flex items-center p-4 border-t">
+                                <span class="font-bold text-xl">3</span>&nbsp;<span class="text-sm font-semibold">ريال للمتر</span>
+                            </div>
+                            <div class="p-4 border-t flex items-center justify-between text-sm text-dark">
+                                <a href="https://youtu.be/rVtQ-8cLV1k?si=maWQZhWZ83Mkiifr" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-0 h-fit">
+                                    التصوير الجوي
+                                    <img src="./assets/images/youtube (1).png" alt="video" height="10" width="70">
+                                </a>
+                                <a href="https://maps.app.goo.gl/CgLR9TeciWCaSDQ27" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-0 h-fit">
+                                    الموقع
+                                    <img src="./assets/images/map.png" alt="video" height="10" width="60">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card-5 -->
+                    <div class="card relative">
+                        <span class="card-number h-16 w-16 flex items-center justify-center text-3xl font-extrabold bg-gradient-to-l from-primary to-light text-gray-50 absolute -top-8 right-1/2 translate-x-1/2 z-10"
+                            style="border-radius: 39% 61% 72% 28% / 30% 39% 61% 70% ;">
+                            5
+                        </span>
+                        <div class="c-card block bg-gradient-to-l from-light to-light_pro shadow-md hover:shadow-lg rounded-lg overflow-hidden duration-500">
+                            <div class="relative h-56 overflow-hidden">
+                                <img class="absolute inset-0 h-full w-full object-cover" src="./assets/images/m-5.jpeg" alt="">
+                            </div>
+                            <div class="p-4">
+                                <span class="inline-block px-2 py-1 mb-2 leading-none bg-dark text-light_pro rounded-full font-semibold uppercase tracking-wide text-xs">منطقة القصيم</span>
+                                <h2 class="mt-2 mb-2  font-bold">
+                                    مزرعة غرب القصيم بمساحة ٢١٥٠٥٦٩ متر
+                                </h2>
+                                <ul class="text-sm">
+                                    <h3 class="font-bold mb-3 relative ps-2 | before:content[''] before:absolute before:-right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        حدود وأطوال ومساحة الأرض
+                                    </h3>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        شمال: مزرعة بطول ١٥٣ متر
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        جنوب: أرض فضاء بطول ٣٧٣ متر
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        شرق: شارع بعرض ١٠٠م بطول ٨٥٩ متر
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        غرب: شارع عرض ٥٠م بطول ٧٩٥ متر
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-3 flex items-center p-4 border-t">
+                                <span class="font-bold text-xl">1.5</span>&nbsp;<span class="text-sm font-semibold">ريال للمتر</span>
+                            </div>
+                            <div class="p-4 border-t flex items-center justify-between text-sm text-dark">
+                                <a href="https://youtu.be/P7mN36v5pjk?si=RgQC0IvrzhtlYKIm" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-0 h-fit">
+                                    التصوير الجوي
+                                    <img src="./assets/images/youtube (1).png" alt="video" height="10" width="70">
+                                </a>
+                                <a href="https://goo.gl/maps/8dCjQXj5xvWnDvKt5" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-0 h-fit">
+                                    الموقع
+                                    <img src="./assets/images/map.png" alt="video" height="10" width="60">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card-6 -->
+                    <div class="card relative">
+                        <span class="card-number h-16 w-16 flex items-center justify-center text-3xl font-extrabold bg-gradient-to-l from-primary to-light text-gray-50 absolute -top-8 right-1/2 translate-x-1/2 z-10"
+                            style="border-radius: 39% 61% 72% 28% / 30% 39% 61% 70% ;">
+                            6
+                        </span>
+                        <div class="c-card block bg-gradient-to-l from-light to-light_pro shadow-md hover:shadow-lg rounded-lg overflow-hidden duration-500">
+                            <div class="relative h-56 overflow-hidden">
+                                <img class="absolute inset-0 h-full w-full object-cover" src="./assets/images/m-6.jpeg" alt="">
+                            </div>
+                            <div class="p-4">
+                                <span class="inline-block px-2 py-1 mb-2 leading-none bg-dark text-light_pro rounded-full font-semibold uppercase tracking-wide text-xs">منطقة القصيم</span>
+                                <h2 class="mt-2 mb-2  font-bold">
+                                    قصر بن عقيل الخشيبي بمساحة 173653 متر
+                                </h2>
+                                <ul class="text-sm">
+                                    <h3 class="font-bold mb-3 relative ps-2 | before:content[''] before:absolute before:-right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        حدود وأطوال ومساحة الأرض
+                                    </h3>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الشمال: يحدها شارع بعرض 20 متر.
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الجنوب: يحدها أرض بطول 188 متر ثم ينحني شرقًا بمسافة 92 مترًا، ثم ينحني شمالًا بمسافة 52 مترًا، وأخيرًا ينحني شرقًا
+                                        بمسافة 226 مترًا.
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الشرق: يحدها شارع بعرض متغير وهضبة جبلية بطول 276 متر.
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        الغرب: يحدها وادي (شعيب البطاح) بطول 210 أمتار ثم ينحني بمسافة 64 مترًا.
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        بئر مياه، عداد كهرباء، أسفلت، استراحة للإيجار، نخل.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-3 flex items-center p-4 border-t">
+                                <span class="font-bold text-xl">2</span>&nbsp;<span class="text-sm font-semibold">ريال للمتر</span>
+                            </div>
+                            <div class="p-4 border-t flex items-center justify-between text-sm text-dark">
+                                <a href="https://youtu.be/vKx3kHNNsEo?si=QcKsPC_5J1LlOlxR" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-0 h-fit">
+                                    التصوير الجوي
+                                    <img src="./assets/images/youtube (1).png" alt="video" height="10" width="70">
+                                </a>
+                                <a href="" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-0 h-fit">
+                                    الموقع
+                                    <img src="./assets/images/map.png" alt="video" height="10" width="60">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card-7 -->
+                    <div class="card relative">
+                        <span class="card-number h-16 w-16 flex items-center justify-center text-3xl font-extrabold bg-gradient-to-l from-primary to-light text-gray-50 absolute -top-8 right-1/2 translate-x-1/2 z-10"
+                            style="border-radius: 39% 61% 72% 28% / 30% 39% 61% 70% ;">
+                            7
+                        </span>
+                        <div class="c-card block bg-gradient-to-l from-light to-light_pro shadow-md hover:shadow-lg rounded-lg overflow-hidden duration-500">
+                            <div class="relative h-56 overflow-hidden">
+                                <img class="absolute inset-0 h-full w-full object-cover" src="./assets/images/m-7.jpeg" alt="">
+                            </div>
+                            <div class="p-4">
+                                <span class="inline-block px-2 py-1 mb-2 leading-none bg-dark text-light_pro rounded-full font-semibold uppercase tracking-wide text-xs">منطقة القصيم</span>
+                                <h2 class="mt-2 mb-2  font-bold">
+                                    مزرعة شرق حائل جنين بمساحة 479,070,45 متر
+                                </h2>
+                                <ul class="text-sm">
+                                    <h3 class="font-bold mb-3 relative ps-2 | before:content[''] before:absolute before:-right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        المميزات
+                                    </h3>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        تقع على طريق حائل - حفر الباطن الجديد
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        مناسبة للمشاريع وتربية المواشي
+                                    </li>
+                                    <li class="relative mb-2 ps-4 | before:content[''] before:absolute before:right-1 before:top-[6px] before:h-2 before:w-2 before:rounded-full before:bg-light_pro">
+                                        مناسبة للمخيمات والتخييم
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-3 flex items-center p-4 border-t">
+                                <span class="font-bold text-xl">2</span>&nbsp;<span class="text-sm font-semibold">ريال للمتر</span>
+                            </div>
+                            <div class="p-4 border-t flex items-center justify-between text-sm text-dark">
+                                <a href="https://youtu.be/qrSTVbKgyg4?si=OQwKNyUtxUAvVKkQ" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-0 h-fit">
+                                    التصوير الجوي
+                                    <img src="./assets/images/youtube (1).png" alt="video" height="10" width="70">
+                                </a>
+                                <a href="https://maps.app.goo.gl/qbBDr2QtxLa3EhRs8" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-0 h-fit">
+                                    الموقع
+                                    <img src="./assets/images/map.png" alt="video" height="10" width="60">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+        <!-- residential-lands -->
+
+        <section id="residential-lands" class="py-16">
+            <div class="container">
+
+                <!-- Main title -->
+                <h2 class="flex flex-row flex-nowrap items-center mb-16">
+                    <span class="flex-grow block border-t border-dark"></span>
+                    <span class="flex-none block mx-4 px-4 py-2.5 text-xl rounded leading-none font-medium bg-primary text-white">
+                        أراضي سكنية
+                    </span>
+                    <span class="flex-grow block border-t border-dark"></span>
+                </h2>
+
+
+                <!-- Cards -->
+                <div class="grid gap-5 grid-cols-1 lg:grid-cols-3">
+
+
+
+                </div>
+
+
+            </div>
+        </section>
+        
+        
+
+
+    </main>
+
+    <!-- ********** Start Footer ********** -->
+    <footer class="">
+        <div class="contact py-3 border-b">
+            <div class="container px-5 xl:px-40 mx-auto flex gap-2 items-center justify-center">
+                <div class="whatsapp">
+                    <a href="https://wa.me/+966532960057"
+                        target="_blank" class="insta text-white text-2xl cursor-pointer bg-green-500 hover:bg-green-600 duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="snapchat">
+                    <a href="https://www.snapchat.com/add/mohamedabde5227?share_id=MjAzN0JGNTQtNTk4OS00NjM0LTlDNzYtQzk5MjM0OEEzRTY3&locale=ar_SA%40calendar%3Dgregorian  " target="_blank" class="insta text-white text-2xl cursor-pointer bg-[#f0ed3d] hover:bg-[#dfdc4a] duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                    <i class="fab fa-snapchat"></i>
+                </a>
+                </div>
+                <div class="tiktok">
+                    <a href="https://www.tiktok.com/@mohammedabdulhad70" target="_blank" class="insta text-white text-2xl cursor-pointer bg-[#222] hover:bg-[#111] duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+                <div class="youtube">
+                    <a href="https://www.youtube.com/@aqaro0o0" target="_blank" class="insta text-white text-2xl cursor-pointer bg-red-500 hover:bg-red-600 duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="foot px-5 py-4 text-sm text-white bg-gradient-to-l from-primary to-light">
+            <p class="w-fit mx-auto">جميع الحقوق محفوظة لموقع MASA 2024</p>
+        </div>
+    </footer>
+    <!-- ********** End Footer ********** -->
+    
+
+    <script>
+        var typed1 = new Typed('#typed1', {
+            strings: [
+                'وسيطة عقارية - Masa'
+            ],
+            delay: 300,
+            typeSpeed: 40,
+            backSpeed: 15,
+            loop: false,
+            cursorChar: ''
+        });
+        var typed2 = new Typed('#typed2', {
+            strings: [
+                'قطع أراضي مختلفة المساحات في أنحاء المملكة العربية السعودية للبيع.'
+            ],
+            typeSpeed: 40,
+            backSpeed: 20,
+            loop: false,
+            cursorChar: ''
+        });
+    </script>
+    <!-- Start JS Files -->
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
