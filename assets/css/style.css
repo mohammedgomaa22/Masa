@@ -39,7 +39,7 @@ html {
 /* ----------------- */
 .nav-active {
     color: #1c1c56;
-    background-color: #fffae7 !important;
+    background-color: #ffffff !important;
 }
 
 /* ----------------- */
@@ -207,7 +207,7 @@ header.home {
     height: 28px;
     margin: 2px;
     border-radius: 0px;
-    background: white;
+    background: black;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
